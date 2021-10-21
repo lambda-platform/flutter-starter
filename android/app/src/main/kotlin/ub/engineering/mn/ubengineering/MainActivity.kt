@@ -1,4 +1,4 @@
-package ub.engineering.app
+package lambda.starter.app
 
 import io.flutter.embedding.android.FlutterActivity
 

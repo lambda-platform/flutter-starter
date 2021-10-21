@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:252053894714:android:cfeaf713510c2a9f17e703",
         "android_client_info": {
-          "package_name": "ub.engineering.app"
+          "package_name": "lambda.starter.app"
         }
       },
       "oauth_client": [
