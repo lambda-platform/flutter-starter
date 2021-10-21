@@ -1,0 +1,111 @@
+enum condition {
+  equals
+  notEqual
+  contains
+  notContains
+  startsWith
+  endsWith
+  greaterThan
+  greaterThanOrEqual
+  lessThan
+  lessThanOrEqual
+  isNull
+  notNull
+  whereIn
+}
+
+type deleted {
+  id: String!
+}
+
+type Districts {
+  created_at: Time
+  fax: String
+  governor: String
+  id: Int!
+  name_en: String
+  name_mn: String
+  object_id: Int
+  phone: String
+  tailbar: String
+  update_at: Time
+  website: String
+  regions: [Regions!]
+}
+
+input filter {
+  column: String!
+  condition: condition!
+  value: String!
+}
+
+enum order {
+  asc
+  desc
+}
+
+type paginate {
+  page: Int!
+  total: Int!
+  last_page: Int!
+  regions: [Regions!]
+  districts: [Districts!]
+}
+
+type Query {
+  regions(sorts: [sort], filters: [filter], limit: Int, offset: Int): [Regions!]
+  districts(
+    sorts: [sort]
+    filters: [filter]
+    subSorts: [subSort]
+    subFilters: [subFilter]
+    limit: Int
+    offset: Int
+  ): [Districts!]
+  paginate(
+    sorts: [sort]
+    filters: [filter]
+    subSorts: [subSort]
+    subFilters: [subFilter]
+    page: Int!
+    size: Int!
+  ): paginate!
+}
+
+type Regions {
+  created_at: Time
+  district_id: Int
+  governor: String
+  id: Int!
+  name: Int
+  object_id: Int
+  phone: String
+  updated_at: Time
+}
+
+input sort {
+  column: String!
+  order: order!
+}
+
+input subFilter {
+  column: String!
+  table: String!
+  condition: condition!
+  value: String!
+}
+
+input subSort {
+  column: String!
+  table: String!
+  order: order!
+}
+
+type subTable {
+  table: String!
+  parentIdentity: String!
+  ConnectionField: String!
+}
+
+scalar Time
+

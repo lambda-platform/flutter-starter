@@ -1,0 +1,10 @@
+query districts{
+    districts{
+        id
+        name_en
+        name_mn
+        regions{
+            name
+        }
+    }
+}
