@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lambda/plugins/data_form/lambda_data_form.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:ubengineering/ui/helpers/success_modal.dart';
+import 'package:lambdastarter/ui/helpers/success_modal.dart';
 
 class AboutRepairScreen extends StatefulWidget {
   AboutRepairScreen({Key? key}) : super(key: key);

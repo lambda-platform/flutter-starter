@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:ubengineering/core/models/user.dart';
+import 'package:lambdastarter/core/models/user.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/graphql/API/districts.dart';
+import 'package:lambdastarter/graphql/API/districts.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert' as convert;
 

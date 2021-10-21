@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 
 AppBar CustomBottomBarHeader(BuildContext context, text) {
   final AppController _appController = Get.put(AppController());

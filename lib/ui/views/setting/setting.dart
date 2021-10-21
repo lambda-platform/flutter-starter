@@ -3,10 +3,10 @@ import 'package:flutter/services.dart';
 import 'package:get/state_manager.dart';
 import 'package:location/location.dart' as loc;
 import 'package:permission_handler/permission_handler.dart';
-import 'package:ubengineering/ui/common/TopBar.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/utils/custom_icons.dart';
+import 'package:lambdastarter/ui/common/TopBar.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/utils/custom_icons.dart';
 
 class Setting extends StatefulWidget {
   const Setting({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/core/constants/values.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/core/constants/values.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 
 class RepairHistoryWidget extends StatelessWidget {
   final List<dynamic> images;

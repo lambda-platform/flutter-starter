@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:ubengineering/core/models/user.dart';
-import 'package:ubengineering/ui/styles/_colors.dart' as prefix0;
+import 'package:lambdastarter/core/models/user.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart' as prefix0;
 import 'package:lambda/plugins/progress_dialog/progress_dialog.dart';
 import 'package:lambda/plugins/verify_input/verify_input.dart';
 import 'package:lambda/modules/network_util.dart';

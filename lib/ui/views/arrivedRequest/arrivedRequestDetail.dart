@@ -3,13 +3,13 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/core/constants/values.dart';
-import 'package:ubengineering/graphql/API/arrived_request_detail.dart';
-import 'package:ubengineering/graphql/API/send_request_detail.graphql.dart';
-import 'package:ubengineering/graphql/config.dart';
-import 'package:ubengineering/ui/common/api_error.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/core/constants/values.dart';
+import 'package:lambdastarter/graphql/API/arrived_request_detail.dart';
+import 'package:lambdastarter/graphql/API/send_request_detail.graphql.dart';
+import 'package:lambdastarter/graphql/config.dart';
+import 'package:lambdastarter/ui/common/api_error.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:intl/intl.dart';
 
 class ArrivedRequestDetailScreen extends StatefulWidget {

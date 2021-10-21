@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/graphql/API/ds_notifications.graphql.dart';
-import 'package:ubengineering/graphql/config.dart';
-import 'package:ubengineering/ui/common/TopBar.dart';
-import 'package:ubengineering/ui/common/bottombar_navigation.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
-import 'package:ubengineering/ui/common/paginate.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/graphql/API/ds_notifications.graphql.dart';
+import 'package:lambdastarter/graphql/config.dart';
+import 'package:lambdastarter/ui/common/TopBar.dart';
+import 'package:lambdastarter/ui/common/bottombar_navigation.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
+import 'package:lambdastarter/ui/common/paginate.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:intl/intl.dart';
 
 class Notifications extends StatefulWidget {

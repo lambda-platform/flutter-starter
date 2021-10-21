@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/graphql/API/ds_request_filtered.graphql.dart';
-import 'package:ubengineering/graphql/API/ds_request_fixer.graphql.dart';
-import 'package:ubengineering/ui/common/arrived_request.widget.dart';
-import 'package:ubengineering/ui/common/bottombar_navigation.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
-import 'package:ubengineering/ui/common/paginate.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/graphql/API/ds_request_filtered.graphql.dart';
+import 'package:lambdastarter/graphql/API/ds_request_fixer.graphql.dart';
+import 'package:lambdastarter/ui/common/arrived_request.widget.dart';
+import 'package:lambdastarter/ui/common/bottombar_navigation.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
+import 'package:lambdastarter/ui/common/paginate.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/graphql/config.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/graphql/config.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 
 class ArrivedRequestScreen extends StatefulWidget {
   const ArrivedRequestScreen({Key? key}) : super(key: key);

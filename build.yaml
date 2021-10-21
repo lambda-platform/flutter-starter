@@ -55,7 +55,7 @@ targets:
           
 
 
-          custom_parser_import: 'package:ubengineering/graphql/utils/coercers.dart'
+          custom_parser_import: 'package:lambdastarter/graphql/utils/coercers.dart'
           scalar_mapping:
             - graphql_type: Time
               dart_type: DateTime

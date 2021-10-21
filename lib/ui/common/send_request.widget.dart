@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:intl/intl.dart';
 
 class SendRequestWidget extends StatelessWidget {

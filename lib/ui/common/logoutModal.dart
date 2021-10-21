@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/ui/common/CustomIcons.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/common/CustomIcons.dart';
 import 'package:get/get.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
 

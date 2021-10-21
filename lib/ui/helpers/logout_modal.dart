@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/utils/custom_icons.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/utils/custom_icons.dart';
 
 Future<void> alertModal(context, description, onTap) async {
   return showDialog<void>(

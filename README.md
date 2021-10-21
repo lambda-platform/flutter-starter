@@ -2,16 +2,16 @@
 
 What is included
 
- - Graphql model generator
- - Login & password reset
- - GetX state management
- - Firebase notification  
- - Lambda flutter plugins
-    - Dataform
-    - Datagrid  
-    - Agent
-    - Chart
-    - Moqup
+- Graphql model generator
+- Login & password reset
+- GetX state management
+- Firebase notification
+- Lambda flutter plugins
+   - Dataform
+   - Datagrid
+   - Agent
+   - Chart
+   - Moqup
 
 
 # Build graphql documents
@@ -28,5 +28,8 @@ arch -x86_64 pod install
 arch -x86_64 pod install --repo-update
 
 
+# Installation
 
-flutter pub global run flutter_create -a auto -u https://github.com/lambda-platform/flutter-starter
+flutter pub global activate flutter_create
+
+flutter pub global run flutter_create -a appname -u https://github.com/lambda-platform/flutter-starter

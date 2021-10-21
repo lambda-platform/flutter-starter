@@ -3,13 +3,13 @@ import 'dart:ui';
 import 'package:get/get.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/ui/common/map_widgets/esri_icons_icons.dart';
-import 'package:ubengineering/core/models/user.dart';
-import 'package:ubengineering/ui/views/layout/citizen.dart';
-import 'package:ubengineering/utils/custom_icons.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/ui/common/map_widgets/esri_icons_icons.dart';
+import 'package:lambdastarter/core/models/user.dart';
+import 'package:lambdastarter/ui/views/layout/citizen.dart';
+import 'package:lambdastarter/utils/custom_icons.dart';
 
 class LoginPage extends StatefulWidget {
   @override

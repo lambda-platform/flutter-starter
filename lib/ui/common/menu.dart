@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
 import 'package:get/get.dart';
 
 
 import 'package:lambda/modules/agent/agent_controller.dart';
-import 'package:ubengineering/ui/common/logoutModal.dart';
-import 'package:ubengineering/ui/common/customIcons.dart';
-import 'package:ubengineering/ui/views/setting/setting.dart';
+import 'package:lambdastarter/ui/common/logoutModal.dart';
+import 'package:lambdastarter/ui/common/customIcons.dart';
+import 'package:lambdastarter/ui/views/setting/setting.dart';
 
 class MenuWidget extends StatefulWidget {
   final GlobalKey<SliderMenuContainerState> _menuKey;

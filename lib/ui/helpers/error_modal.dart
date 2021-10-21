@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/utils/custom_icons.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/utils/custom_icons.dart';
 
 Future<void> errorModal(context, description, onTap, btnText) async {
   return showDialog<void>(

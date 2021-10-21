@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
-import 'package:ubengineering/ui/common/paginate.dart';
-import 'package:ubengineering/ui/common/send_request.widget.dart';
-import 'package:ubengineering/graphql/config.dart';
-import 'package:ubengineering/graphql/API/ds_request_conflicts.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
+import 'package:lambdastarter/ui/common/paginate.dart';
+import 'package:lambdastarter/ui/common/send_request.widget.dart';
+import 'package:lambdastarter/graphql/config.dart';
+import 'package:lambdastarter/graphql/API/ds_request_conflicts.dart';
 
 class SendRequestScreen extends StatefulWidget {
   const SendRequestScreen({Key? key}) : super(key: key);

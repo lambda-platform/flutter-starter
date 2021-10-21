@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:lambda/plugins/data_form/loader.dart';
-import 'package:ubengineering/graphql/API/ds_notificaiton_detail.graphql.dart';
-import 'package:ubengineering/graphql/config.dart';
-import 'package:ubengineering/graphql/utils/coercers.dart';
-import 'package:ubengineering/ui/common/api_error.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
+import 'package:lambdastarter/graphql/API/ds_notificaiton_detail.graphql.dart';
+import 'package:lambdastarter/graphql/config.dart';
+import 'package:lambdastarter/graphql/utils/coercers.dart';
+import 'package:lambdastarter/ui/common/api_error.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 
 class NotificationDetailScreen extends StatefulWidget {
   NotificationDetailScreen({Key? key}) : super(key: key);

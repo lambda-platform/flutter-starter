@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/router.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/router.dart';
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

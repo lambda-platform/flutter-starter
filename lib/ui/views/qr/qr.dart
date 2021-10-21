@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/ui/common/custom_header.dart';
+import 'package:lambdastarter/ui/common/custom_header.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class QR extends StatefulWidget {
