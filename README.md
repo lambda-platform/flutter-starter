@@ -7,11 +7,11 @@ What is included
 - GetX state management
 - Firebase notification
 - Lambda flutter plugins
-   - Dataform
-   - Datagrid
-   - Agent
-   - Chart
-   - Moqup
+    - Dataform
+    - Datagrid
+    - Agent
+    - Chart
+    - Moqup
 
 
 # Build graphql documents
@@ -33,3 +33,8 @@ arch -x86_64 pod install --repo-update
 flutter pub global activate flutter_create
 
 flutter pub global run flutter_create -a appname -u https://github.com/lambda-platform/flutter-starter
+
+
+# Change app icon
+
+flutter pub run flutter_launcher_icons:main
