@@ -1,0 +1,34 @@
+query ds_request_filtered($fixer_id: String!, $type_id: String!, $page: Int!, $size: Int!){ 
+  paginate(sorts: [{ column: "id", order: desc}], filters: [
+    {
+      column: "fixer_id",
+      condition: equals,
+      value: $fixer_id
+  	}, 
+    {
+      column: "type_id",
+    	condition: equals,
+    	value: $type_id,
+    },
+    {
+      column: "status_id",
+      condition: equals,
+      value: "2"
+    },
+  ], page: $page, size: $size){
+    total
+    last_page
+  	ds_request_conflicts{
+      id
+      name,
+      description,
+      created_at,
+      status_name,
+      name_org,
+      status_id,
+      type_name,
+      type_id,
+      fixer_id
+    }    
+	}
+}

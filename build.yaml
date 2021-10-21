@@ -1,0 +1,65 @@
+targets:
+  $default:
+    builders:
+      artemis:
+        options:
+          schema_mapping:
+            - output: lib/graphql/API/districts.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/districts.graphql
+            - output: lib/graphql/API/ds_request_conflicts.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/ds_request_conflicts.graphql
+            - output: lib/graphql/API/about_repair.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/about_repair.graphql
+            - output: lib/graphql/API/send_request_detail.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/send_request_detail.graphql
+            - output: lib/graphql/API/ds_request_fixer.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/ds_request_fixer.graphql
+            - output: lib/graphql/API/ds_request_filtered.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/ds_request_filtered.graphql
+            - output: lib/graphql/API/arrived_request_detail.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/arrived_request_detail.graphql
+            - output: lib/graphql/API/request_repair_history.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/request_repair_history.graphql
+            - output: lib/graphql/API/repair_history_detail.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/repair_history_detail.graphql
+            - output: lib/graphql/API/repair_history_filtered.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/repair_history_filtered.graphql
+            - output: lib/graphql/API/getDistrictId.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/getDistrictId.graphql
+            - output: lib/graphql/API/getKhorooId.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/getKhorooId.graphql
+            - output: lib/graphql/API/qrRepairHistory.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/qrRepairHistory.graphql
+            - output: lib/graphql/API/ds_notifications.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/ds_notifications.graphql
+            - output: lib/graphql/API/ds_notificaiton_detail.dart
+              schema: lib/graphql/schema.graphql
+              queries_glob: lib/graphql/queries/ds_notificaiton_detail.graphql
+              
+
+              
+          
+
+
+          custom_parser_import: 'package:ubengineering/graphql/utils/coercers.dart'
+          scalar_mapping:
+            - graphql_type: Time
+              dart_type: DateTime
+              use_custom_parser: true
+            - graphql_type: ID
+              dart_type: int
+              use_custom_parser: false

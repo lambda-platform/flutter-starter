@@ -1,0 +1,19 @@
+query send_request_detail($requestID: String!,){
+  ds_request_conflicts(filters: {
+    column: "id",
+    condition: equals,
+    value: $requestID,
+  }){
+    id,
+    name,
+    description,
+    created_at,
+    status_id,
+    status_name,
+    fixer_id,
+    fixer_description,
+    req_image,
+    fixer_image,
+    ended_at,
+  }
+}

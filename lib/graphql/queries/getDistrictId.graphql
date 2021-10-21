@@ -1,0 +1,10 @@
+query getDistrictId($districtName: String!){
+  districts(filters: {
+    column: "name_mn",
+    condition: equals,
+    value: $districtName,
+  }){
+    id,
+    name_mn
+  }
+}

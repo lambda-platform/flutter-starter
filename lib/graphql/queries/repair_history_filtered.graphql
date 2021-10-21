@@ -1,0 +1,32 @@
+query repair_history_filtered($fixer_id: String!, $status_id: String!, $page: Int!, $size: Int!){
+	paginate(sorts: [{column: "id", order: desc}], filters:[{
+      column:"status_id",
+      condition: whereIn,
+      value: "3, 4"
+  	},
+    {
+      column: "fixer_id",
+      condition: equals,
+      value: $fixer_id,
+    },
+    {
+      column: "status_id",
+      condition: equals,
+      value: $status_id
+    }
+  ], page: $page, size: $size)
+	{ 	
+    total
+    last_page
+    ds_request_conflicts{
+      id
+      name,
+      fixer_id,
+      fixer_description,
+      fixer_image,
+      ended_at,
+      status_id,
+      status_name,
+    }    
+	}
+}

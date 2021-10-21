@@ -1,0 +1,18 @@
+query	ds_notification_detail($not_id: String!){
+  ds_notifcation(
+    filters: {
+      column: "notif_id",
+      condition: equals,
+      value: $not_id,
+    }
+  ){
+    notif_id,
+    body,
+    created_at,
+    link,
+    seen,
+    seen_time,
+    sender,
+    title,
+  }
+}

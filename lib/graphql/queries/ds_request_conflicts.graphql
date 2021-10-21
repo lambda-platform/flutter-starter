@@ -1,0 +1,22 @@
+query ds_request_conflicts($requested_user_id: String!, $page: Int!, $size: Int!){ 
+  paginate(sorts: [{ column: "id", order: desc}],filters: {
+      column: "requested_user_id",
+      condition: equals,
+      value: $requested_user_id
+  },  page: $page, size: $size){
+    total
+    last_page
+  	ds_request_conflicts{
+      id
+      name,
+      description,
+      created_at,
+      status_name,
+      name_org,
+      status_id,
+      type_name,
+      type_id,
+      fixer_id
+    }    
+	}
+}

@@ -1,0 +1,18 @@
+query getKhorooId($districtID: String!, $khorooName: String!){
+  regions(filters: [
+    {
+    	column: "district_id",
+      condition: equals,
+      value: $districtID,
+    },
+    {
+      column: "name",
+      condition: equals,
+      value: $khorooName,
+    }
+  ]){
+    district_id,
+    id,
+    name
+  }
+}
