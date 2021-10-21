@@ -1,8 +1,8 @@
 
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:lambda/plugins/data_form/lambda_data_form.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
 import 'package:get/get.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 

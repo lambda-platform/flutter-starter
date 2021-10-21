@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:lambda/plugins/data_form/loader.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';

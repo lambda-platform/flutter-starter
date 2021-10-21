@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/core/constants/firebase.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
+import 'package:lambdastarter/core/constants/firebase.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
 import 'package:lambda/modules/network_util.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/app.dart';
+import 'package:lambdastarter/app.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

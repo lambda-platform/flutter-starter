@@ -1,30 +1,30 @@
 import 'package:flutter/material.dart';
 // import 'package:flutter/src/painting/gradient.dart';
-const Color backgroundColor = Color.fromARGB(255, 255, 241, 159);
-const Color commentColor = Color.fromARGB(255, 255, 246, 196);
+const Color backgroundColor = Color.fromARGB(255, 159, 213, 255);
+const Color commentColor = Color.fromARGB(255, 196, 220, 255);
 
-const Color mainColor = Color(0xFFE3562A);
+const Color mainColor = Color(0xFF2f55d4);
 const Color grayColor = Color(0xff666666);
 const Color darkGrey = const Color(0xFF78746D);
 const MaterialColor mainThemeColor = const MaterialColor(
   0xFFE3562A,
   const <int, Color>{
-    50: const Color(0xFFE37451),
-    100: const Color(0xFFE3562A),
-    200: const Color(0xFFD4481C),
-    300: const Color(0xFFBB3F18),
-    400: const Color(0xFF902D0E),
-    500: const Color(0xFF742208),
-    600: const Color(0xFF71250E),
-    700: const Color(0xFF521805),
-    800: const Color(0xFF391003),
-    900: const Color(0xFF1A0701),
+    50: const Color(0xff5d7be0),
+    100: const Color(0xFF2f55d4),
+    200: const Color(0xff1f3faa),
+    300: const Color(0xff17369e),
+    400: const Color(0xff1b3487),
+    500: const Color(0xff122668),
+    600: const Color(0xff0b1c55),
+    700: const Color(0xff051447),
+    800: const Color(0xff03103b),
+    900: const Color(0xff000b2d),
   },
 );
 
 const Color bgColor = Color(0xfff1f2f3);
 const Color bgSecondColor = Color(0xffF5F6FB);
-const Color primaryColor = Color(0xFF0D47A1);
+const Color primaryColor = Color(0xFF2f55d4);
 const Color secondaryColor = Color(0xFF1976D2);
 const Color textColor = Color(0xff666666);
 const Color borderColor = Color(0xff999999);

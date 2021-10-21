@@ -13,7 +13,7 @@ class User {
   String? lastName;
   String? login;
   String? orgId;
-  String? phone;
+
   int? regionId;
   String? registerNumber;
   int? role;
@@ -35,7 +35,7 @@ class User {
     this.lastName,
     this.login,
     this.orgId,
-    this.phone,
+
     this.regionId,
     this.registerNumber,
     this.role,
@@ -59,7 +59,7 @@ class User {
     lastName = json['last_name'];
     login = json['login'];
     orgId = json['org_id'];
-    phone = json['phone'];
+
     regionId = json['region_id'];
     registerNumber = json['register_number'];
     role = json['role'];
@@ -84,7 +84,7 @@ class User {
     data['last_name'] = this.lastName;
     data['login'] = this.login;
     data['org_id'] = this.orgId;
-    data['phone'] = this.phone;
+
     data['region_id'] = this.regionId;
     data['register_number'] = this.registerNumber;
     data['role'] = this.role;

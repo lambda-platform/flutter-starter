@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/common/header.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
-import 'package:ubengineering/ui/views/map/map.dart';
-import 'package:ubengineering/ui/views/qr/qr.dart';
-import 'package:ubengineering/ui/views/userRequest/userRequest.dart';
-import 'package:ubengineering/ui/views/notifications/notifications.dart';
-import 'package:ubengineering/ui/common/menu.dart';
+import 'package:lambdastarter/ui/common/header.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/views/map/map.dart';
+import 'package:lambdastarter/ui/views/example/example.dart';
+import 'package:lambdastarter/ui/common/menu.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,9 +20,7 @@ class _HomePageState extends State<HomePage> {
   new GlobalKey<SliderMenuContainerState>();
   static const List<Widget> _pages = <Widget>[
     Map(),
-    QR(),
-    UserRequest(),
-    Notifications(),
+    Example(),
   ];
 
   void _onItemTapped(int index) {
@@ -39,14 +35,9 @@ class _HomePageState extends State<HomePage> {
       return "Нүүр";
         break;
       case 1:
-      return "QR код";
+      return "Жишээ";
         break;
-      case 2:
-      return "Хүсэлт";
-        break;
-      case 3:
-      return "Мэдэгдэл";
-        break;
+
     }
     return "Нүүр";
   }
@@ -84,17 +75,11 @@ class _HomePageState extends State<HomePage> {
             label: "Нүүр",
           ),
           BottomNavigationBarItem(
+
             icon: Icon(Icons.qr_code),
-            label: 'QR код',
+            label: "Жишээ",
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.schedule_send_outlined),
-            label: 'Хүсэлт',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Мэдэгдэл',
-          ),
+
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

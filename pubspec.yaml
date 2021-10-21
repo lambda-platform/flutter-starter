@@ -1,4 +1,4 @@
-name: ubengineering
+name: lambdastarter
 description: lambda-flutter-starter
 
 # The following line prevents the package from being accidentally published to
@@ -62,14 +62,8 @@ flutter_icons:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/ub_logo.png
-    - assets/images/ub2.png
-    - assets/images/user_profile.png
-    - assets/images/user.png
-    - assets/images/setting.png
-    - assets/images/request.png
-    - assets/images/exit.png
-    - assets/images/userReg.png
+    - assets/images/
+
 
 
   fonts:

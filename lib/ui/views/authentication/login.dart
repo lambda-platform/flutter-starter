@@ -3,12 +3,12 @@ import 'dart:ui';
 import 'package:get/get.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/ui/common/map_widgets/esri_icons_icons.dart';
-import 'package:ubengineering/core/models/user.dart';
-import 'package:ubengineering/ui/views/home/home.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/ui/common/map_widgets/esri_icons_icons.dart';
+import 'package:lambdastarter/core/models/user.dart';
+import 'package:lambdastarter/ui/views/home/home.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -97,11 +97,12 @@ class _LoginPageState extends State<LoginPage> {
         },
         child: Stack(
           children: <Widget>[
+
             Container(
               height: MediaQuery.of(context).size.height / 2.5,
               decoration: BoxDecoration(
                 image: new DecorationImage(
-                  image: new AssetImage("assets/images/ub2.png"),
+                  image: new AssetImage("assets/images/lambda-bg.png"),
                   fit: BoxFit.fitWidth,
                 ),
               ),
@@ -119,16 +120,14 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Image.asset(
-                      'assets/images/ub_logo.png',
+                      'assets/images/logo.png',
                       height: 80,
                       fit:BoxFit.cover
                   ),
-                  SizedBox(
-                    height: 14.0,
-                  ),
+
                    Container(
                        width: 260,
-                       child: Text('UB \n ENGINEERING', textAlign: TextAlign.center, style: TextStyle(color: mainColor, fontSize: 16, fontWeight: FontWeight.w900),)
+                       child: Text('Lambda Platform', textAlign: TextAlign.center, style: TextStyle(color: mainColor, fontSize: 25, fontWeight: FontWeight.w600),)
                    ),
                 ],
               ),
@@ -138,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 Container(
                   margin: EdgeInsets.only(
-                      top: MediaQuery.of(context).size.height / 2.7,
+                      top: MediaQuery.of(context).size.height / 2.5,
 //                      left: 25,
 //                      right: 25,
                       bottom: 20),
@@ -177,16 +176,16 @@ class _LoginPageState extends State<LoginPage> {
                                     contentPadding: EdgeInsets.all(2),
                                     border: OutlineInputBorder(borderSide: BorderSide(width: 1), borderRadius: BorderRadius.circular(20)),
                                     labelText: 'Нэврэх нэр',
-                                 //   labelStyle: TextStyle(color:primaryColor),
-                                    hintStyle: TextStyle(color: Color.fromRGBO(147, 157, 186, .78), fontSize: 18, fontWeight: FontWeight.w400),
+                                   labelStyle: TextStyle(color:primaryColor),
+                                    hintStyle: TextStyle(color: mainColor, fontSize: 18, fontWeight: FontWeight.w400),
                                     focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(width: 1)),
-                                    focusedErrorBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(width: 1, color: Colors.red)),
+                                    focusedErrorBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(20), borderSide: BorderSide(width: 1, color: mainColor)),
                                     errorStyle: TextStyle(height: 0),
                                     prefixIcon: Padding(
                                       padding: EdgeInsets.all(0.0),
                                       child: Icon(
                                         EsriIcons.user,
-                                        color:Color.fromRGBO(147, 157, 186, .78),
+                                        color:mainColor,
                                         size: 22,
                                       ),
                                     ),
@@ -212,7 +211,7 @@ class _LoginPageState extends State<LoginPage> {
                                         borderRadius:
                                             BorderRadius.circular(20)),
                                     labelText: 'Нууц үг',
-                                  //  labelStyle: TextStyle(color:primaryColor),
+                                    labelStyle: TextStyle(color:primaryColor),
 
                                     hintStyle: TextStyle(
                                         color:
@@ -225,11 +224,11 @@ class _LoginPageState extends State<LoginPage> {
                                     focusedErrorBorder: OutlineInputBorder(
                                         borderRadius: BorderRadius.circular(20),
                                         borderSide: BorderSide(
-                                            width: 1, color: Colors.red)),
+                                            width: 1, color: mainColor)),
                                     errorStyle: TextStyle(height: 0),
                                     prefixIcon: Icon(
                                       EsriIcons.locked,
-                                      color: Color.fromRGBO(147, 157, 186, .78),
+                                      color: mainColor,
                                       size: 22,
                                     ),
                                   ),
@@ -401,7 +400,7 @@ class _LoginPageState extends State<LoginPage> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Text(
-                        'Нийслэлийн захирагчийн алба © 2021',
+                        'Lambda Platform © 2021',
                         textAlign: TextAlign.end,
                         style: TextStyle(
                             fontSize: 13,

@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ubengineering/ui/styles/_colors.dart' as prefix0;
-import 'package:ubengineering/ui/views/authentication/verify.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart' as prefix0;
+import 'package:lambdastarter/ui/views/authentication/verify.dart';
 import 'package:lambda/modules/network_util.dart';
 import 'package:lambda/plugins/progress_dialog/progress_dialog.dart';
 

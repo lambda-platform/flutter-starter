@@ -3,18 +3,18 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:ubengineering/ui/styles/_colors.dart';
+import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:package_info/package_info.dart';
 import 'package:lambda/modules/network_util.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
-import 'package:ubengineering/core/controllers/appController.dart';
-import 'package:ubengineering/core/models/user.dart';
+import 'package:lambdastarter/core/controllers/appController.dart';
+import 'package:lambdastarter/core/models/user.dart';
 
-import 'package:ubengineering/core/constants/values.dart';
+import 'package:lambdastarter/core/constants/values.dart';
 
 //GRAPHQL
-import 'package:ubengineering/graphql/config.dart';
-import 'package:ubengineering/graphql/API/districts.dart';
+import 'package:lambdastarter/graphql/config.dart';
+import 'package:lambdastarter/graphql/API/districts.dart';
 
 class InitScreen extends StatefulWidget {
   @override
@@ -85,10 +85,10 @@ class _InitScreenState extends State<InitScreen> {
       _http.initNetwork(baseUrl);
 
       /*
-      * GRAPHQL get data
+      * GRAPHQL get data exampl
       * */
-      final response = await client.execute(DistrictsQuery());
-      _appController.setDistricts(response.data!.districts);
+      // final response = await client.execute(DistrictsQuery());
+      // _appController.setDistricts(response.data!.districts);
 
       await _agentController.setAgent();
       bool isAuth = await _agentController.checkAuth();

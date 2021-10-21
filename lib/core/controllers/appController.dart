@@ -1,7 +1,7 @@
-// import 'package:ubengineering/core/models/district.dart';
-import 'package:ubengineering/core/models/user.dart';
+// import 'package:lambdastarter/core/models/district.dart';
+import 'package:lambdastarter/core/models/user.dart';
 import 'package:get/get.dart';
-import 'package:ubengineering/graphql/API/districts.dart';
+import 'package:lambdastarter/graphql/API/districts.dart';
 class AppController extends GetxController {
   static AppController instance = Get.find();
 

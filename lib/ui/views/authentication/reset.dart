@@ -1,8 +1,8 @@
 import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ubengineering/core/viewmodels/user_model.dart';
-import 'package:ubengineering/ui/views/verify.dart';
+import 'package:lambdastarter/core/viewmodels/user_model.dart';
+import 'package:lambdastarter/ui/views/verify.dart';
 import 'package:lambda/modules/network_util.dart';
 
 
