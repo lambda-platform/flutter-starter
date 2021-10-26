@@ -15,19 +15,12 @@ class _ChartExampleState extends State<ChartExample> {
     return Scaffold(
       // reloadAfterInit:true,
 
-        appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back, color: Colors.black),
-            onPressed: () => Get.back(),
-          ),
-          title: Text("Lambda chart Жишээ"),
 
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          //  LambdaChart('9'),
+           LambdaChart('58'),
           ],
         ),
       ),

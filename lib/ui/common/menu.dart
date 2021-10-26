@@ -4,9 +4,10 @@ import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:lambdastarter/core/controllers/appController.dart';
 import 'package:get/get.dart';
 import 'package:lambdastarter/ui/views/home/home.dart';
-import 'package:lambdastarter/ui/views/chart/chart.dart';
+
 import 'package:lambdastarter/ui/views/authentication/login.dart';
 import 'package:lambda/modules/agent/agent_controller.dart';
+import 'package:lambdastarter/ui/fonts/esri_icons.dart';
 class MenuWidget extends StatefulWidget {
   final GlobalKey<SliderMenuContainerState> _menuKey;
   const MenuWidget(this._menuKey, {Key? key,}) : super(key: key);
@@ -23,12 +24,10 @@ class _MenuWidgetState extends State<MenuWidget> {
     await _agentController.logout();
     Get.offAll(() => LoginPage());
   }
-  void goToHome(){
-    Get.offAll(() => HomePage());
+  void goToPage(int index){
+    Get.offAll(() => HomePage(pageIndex: index));
   }
-  void goToChart(){
-    Get.offAll(() => ChartExample());
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -63,8 +62,9 @@ class _MenuWidgetState extends State<MenuWidget> {
           SizedBox(
             height: 20,
           ),
-          sliderItem('Нүүр', Icons.home, goToHome),
-          sliderItem('Lambda Chart', Icons.pie_chart, goToChart),
+          sliderItem('Газрын зураг', EsriIcons.maps, ()=>goToPage(0)),
+          sliderItem('Chart', EsriIcons.chart, ()=>goToPage(1)),
+          sliderItem('Grid, From', EsriIcons.table, ()=>goToPage(2)),
           sliderItem('Гарах', Icons.arrow_back_ios, logout)
         ],
       ),
