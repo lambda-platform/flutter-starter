@@ -6,16 +6,14 @@ import 'package:get/get.dart';
 import 'package:lambdastarter/ui/styles/_colors.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 class Header extends StatefulWidget {
   final String title;
 
   final GlobalKey<ScaffoldState> scaffold;
-  final GlobalKey<SliderMenuContainerState> _menuKey;
+
   const Header(
       this.title,
       this.scaffold,
-      this._menuKey,
       {Key? key,})
       : super(key: key);
 
@@ -152,7 +150,7 @@ class _HeaderState extends State<Header> {
           ),
         ),
         onPressed: () {
-          widget._menuKey.currentState!.toggle();
+          widget.scaffold.currentState!.openDrawer();
         },
       ),
       actions: <Widget>[

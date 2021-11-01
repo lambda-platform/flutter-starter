@@ -2,10 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:lambdastarter/ui/common/header.dart';
 import 'package:lambdastarter/ui/styles/_colors.dart';
 import 'package:lambdastarter/ui/views/map/map.dart';
-
 import 'package:lambdastarter/ui/fonts/esri_icons.dart';
 import 'package:lambdastarter/ui/common/menu.dart';
-import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:lambdastarter/core/models/page.dart';
 import 'package:lambdastarter/ui/views/chart/chart.dart';
 import 'package:lambdastarter/ui/views/crud/Grid.dart';
@@ -21,7 +19,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-  GlobalKey<SliderMenuContainerState> _menuKey = new GlobalKey<SliderMenuContainerState>();
   List<LambdaPage> pages = [
     LambdaPage("Газрын зураг", Icon(EsriIcons.maps), EsriIcons.maps, Map()),
     LambdaPage("Chart", Icon(EsriIcons.chart), EsriIcons.chart, ChartExample()),
@@ -70,17 +67,12 @@ class _HomePageState extends State<HomePage> {
         child: Header(
           pages[_pageIndex].title,
           _scaffoldKey,
-          _menuKey,
         ),
       ),
-      body: SliderMenuContainer(
-        appBarColor: Colors.white,
-        key: _menuKey,
-        sliderMenuOpenSize: 200,
-        hasAppBar: false,
-        sliderMenu: MenuWidget(_menuKey),
-        sliderMain: pages[_pageIndex].page,
+      drawer:Drawer(
+        child: MenuWidget(_scaffoldKey),
       ),
+      body: pages[_pageIndex].page,
       bottomNavigationBar: bottomNav(),
     );
   }
