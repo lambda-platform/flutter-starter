@@ -32,7 +32,7 @@ arch -x86_64 pod install --repo-update
 
 flutter pub global activate flutter_create
 
-flutter pub global run flutter_create -a appname -u https://github.com/lambda-platform/flutter-starter
+flutter pub global run flutter_create -u https://github.com/lambda-platform/flutter-starter -a appname
 
 
 # Change app icon
