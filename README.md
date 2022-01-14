@@ -22,6 +22,7 @@ flutter pub run build_runner build --delete-conflicting-outputs
 
 Mac M1 pod install
 
+sudo softwareupdate --install-rosetta --agree-to-license
 sudo arch -x86_64 gem install ffi
 cd ios
 arch -x86_64 pod install
