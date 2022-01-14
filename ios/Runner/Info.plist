@@ -52,5 +52,9 @@
     <string>This app needs authenticating with face id</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>This app needs photo library access to upload photos</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This app needs access to location when open.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>This app needs access to location when using user location</string>
 </dict>
 </plist>
